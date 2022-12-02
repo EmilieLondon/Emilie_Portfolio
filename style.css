@@ -9,6 +9,20 @@ body {
   line-height: 1.5;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 5px;
+}
+
+#work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 5px;
+}
+
 h1,
 h2,
 h3,
@@ -20,4 +34,12 @@ h6 {
 
 p {
   margin: 0;
+}
+
+.page-section {
+  background-color: white;
+}
+
+.work-card {
+  background-color: grey;
 }
