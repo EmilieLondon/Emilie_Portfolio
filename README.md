@@ -7,7 +7,7 @@ It showcases my main projects on one page thanks to CSS Grid.
 
 ## Usage
 
-https://emilielondon.github.io/week2challenge/
+https://emilielondon.github.io/Emilie_Portfolio/
 Add screenshot when ready
 
 
