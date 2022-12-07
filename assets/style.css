@@ -3,10 +3,31 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 2%;
+  padding: 0.5%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-banner {
+  display: flex;
+  justify-content: flex-end;
+  color: green;
+  background-image: url("./images/02-hero-bg.jpg");
+  background-size: cover;
+  height: 200px;
+}
+
+.subtitle{
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  height: 50px;
 }
 
 .container {
@@ -19,10 +40,28 @@ body {
 #work {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-rows: 400px 250px 250px;
   gap: 5px;
+  grid-template-areas: 
+  "first-application first-application"
+  ;
 }
 
+#first-application {
+  grid-area: first-application;
+
+}
+
+#first-application img {
+  width: 100%;
+  height: 400px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
 
 h1,
@@ -44,4 +83,10 @@ p {
 
 .work-card {
   background-color: grey;
+}
+
+.contact-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
 }
