@@ -9,10 +9,13 @@ body {
   line-height: 1.5;
 }
 
+/* Header and navigation bar */
+
 header {
   display: flex;
   justify-content: space-between;
 }
+
 
 nav {
 	display: flex;
@@ -46,12 +49,22 @@ header nav ul li {
   height: 50px;
 }
 
+/* Main content */
+
 .container {
   display: grid;
   grid-template-columns: 25% 75%;
   grid-template-rows: 1fr 3fr 1fr;
   gap: 5px;
 }
+
+#about img {
+  display: flex;
+  height: 80px;
+  width: 80px;
+}
+
+/* Portfolio content */
 
 #work {
   display: grid;
@@ -101,15 +114,18 @@ p {
   background-color: grey;
 }
 
+/* Contact details - footer */
+
 .contact-details {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
 }
 
+/* Media query for screens under 650px */
 
 @media screen and (max-width: 650px) {
-	/* header section  */
+	
 	nav {
 		width: 80vw;
 	}
